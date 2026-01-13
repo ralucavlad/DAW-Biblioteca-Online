@@ -56,14 +56,11 @@ autoTrackPage();
             <div class="col-md-4">
                 <div class="card role-card">
                     <div class="card-body">
-                        <div class="icon-box">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
                         <h5 class="card-title">Administrator</h5>
                         <ul class="list-unstyled text-start feature-list">
-                            <li><i class="fas fa-check"></i>Gestionare companii</li>
-                            <li><i class="fas fa-check"></i>Răspuns la mesaje contact</li>
-                            <li><i class="fas fa-check"></i>Nu poate trimite mesaje contact</li>
+                            <li>Gestionare companii</li>
+                            <li>Răspuns la mesaje contact</li>
+                            <li>Nu poate trimite mesaje contact</li>
                         </ul>
                     </div>
                 </div>
@@ -71,16 +68,13 @@ autoTrackPage();
             <div class="col-md-4">
                 <div class="card role-card">
                     <div class="card-body">
-                        <div class="icon-box">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
                         <h5 class="card-title">Manager Companie</h5>
                         <ul class="list-unstyled text-start feature-list">
-                            <li><i class="fas fa-check"></i>Vizualizare activitate angajați companie</li>
-                            <li><i class="fas fa-check"></i>Statistici și rapoarte companie</li>
-                            <li><i class="fas fa-check"></i>Închiriere cărți (ca angajat)</li>
-                            <li><i class="fas fa-check"></i>Recenzii și favorite</li>
-                            <li><i class="fas fa-check"></i>Trimite mesaje contact</li>
+                            <li>Vizualizare activitate angajați companie</li>
+                            <li>Statistici și rapoarte companie</li>
+                            <li>Închiriere cărți (ca angajat)</li>
+                            <li>Recenzii și favorite</li>
+                            <li>Trimite mesaje contact</li>
                         </ul>
                     </div>
                 </div>
@@ -88,17 +82,14 @@ autoTrackPage();
             <div class="col-md-4">
                 <div class="card role-card">
                     <div class="card-body">
-                        <div class="icon-box">
-                            <i class="fas fa-user"></i>
-                        </div>
                         <h5 class="card-title">Angajat (User)</h5>
                         <ul class="list-unstyled text-start feature-list">
-                            <li><i class="fas fa-check"></i>Căutare și filtrare cărți</li>
-                            <li><i class="fas fa-check"></i>Închiriere și returnare cărți</li>
-                            <li><i class="fas fa-check"></i>Scrie recenzii cu rating</li>
-                            <li><i class="fas fa-check"></i>Gestionare listă favorite</li>
-                            <li><i class="fas fa-check"></i>Istoric închirieri personale</li>
-                            <li><i class="fas fa-check"></i>Trimite mesaje contact</li>
+                            <li>Căutare și filtrare cărți</li>
+                            <li>Închiriere și returnare cărți</li>
+                            <li>Scrie recenzii cu rating</li>
+                            <li>Gestionare listă favorite</li>
+                            <li>Istoric închirieri personale</li>
+                            <li>Trimite mesaje contact</li>
                         </ul>
                     </div>
                 </div>
