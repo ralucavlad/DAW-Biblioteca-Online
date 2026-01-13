@@ -1,0 +1,83 @@
+/* Profile Page Styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: none;
+}
+
+.card-header {
+    background-color: var(--bg-light) !important;
+    padding: 20px;
+    border-bottom: none;
+    color: #212529;
+}
+
+.card-header h4,
+.card-header i {
+    color: #212529 !important;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #a0a0a0;
+    box-shadow: 0 0 0 0.2rem rgba(160, 160, 160, 0.25);
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    border: 2px solid #dee2e6;
+    color: #212529;
+}
+
+.btn-primary:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+    color: #212529;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    border: 2px solid #dee2e6;
+    color: #212529;
+}
+
+.btn-secondary:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+    color: #212529;
+    transform: translateY(-2px);
+}
+
+#alert-container {
+    margin-bottom: 20px;
+}
+
+.alert {
+    border-radius: 10px;
+    border: none;
+}

@@ -1,0 +1,76 @@
+/* User dashboard styles */
+.dashboard-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    text-decoration: none;
+    color: inherit;
+}
+
+.dashboard-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s;
+}
+
+.dashboard-icon i {
+    font-size: 2rem;
+    color: var(--text-dark);
+    transition: all 0.3s;
+}
+
+.dashboard-card h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.dashboard-card p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.quick-stats {
+    background-color: var(--bg-lighter);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--text-dark);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}

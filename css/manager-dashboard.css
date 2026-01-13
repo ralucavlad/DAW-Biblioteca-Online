@@ -1,0 +1,102 @@
+/* Section Container */
+.manager-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Statistics Cards */
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Gradient Backgrounds - Matching Admin Section */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #a3b5ec 0%, #b09ac8 100%);
+    color: white;
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #8af0b3 0%, #90f5dd 100%);
+    color: white;
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #f5c0fb 0%, #f8a0a8 100%);
+    color: white;
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #95cefe 0%, #80e8f0 100%);
+    color: white;
+}
+
+/* Stat Card Content */
+.stat-icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+.stat-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Employee Table */
+#employeesTable thead {
+    background: #6c757d;
+    color: white;
+}
+
+#employeesTable tbody tr:hover {
+    background: #e9ecef;
+    cursor: pointer;
+}
+
+/* Print Styles for Reports */
+@media print {
+    .manager-section {
+        background: white;
+        box-shadow: none;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+}
+
+/* DataTables Custom Styles */
+.page-item.active .page-link {
+    background-color: #2d3748 !important;
+    border-color: #2d3748 !important;
+}

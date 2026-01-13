@@ -1,0 +1,102 @@
+/* Admin Messages Page Styles */
+
+/* Statistics Cards */
+.stat-total .stat-icon {
+    background: rgba(90, 143, 181, 0.15);
+    color: #5a8fb5;
+}
+
+.stat-new .stat-icon {
+    background: rgba(143, 184, 143, 0.15);
+    color: #8fb88f;
+}
+
+.stat-read .stat-icon {
+    background: rgba(212, 165, 165, 0.15);
+    color: #d4a5a5;
+}
+
+.stat-answered .stat-icon {
+    background: rgba(184, 168, 201, 0.15);
+    color: #b8a8c9;
+}
+
+.stat-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.stat-content p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+/* Table Styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: none;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.badge {
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+}
+
+/* Action Buttons */
+.btn-view {
+    background: rgba(90, 143, 181, 0.2);
+    color: #5a8fb5;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+    background: rgba(90, 143, 181, 0.3);
+    color: #5a8fb5;
+}
+
+/* Modal Styles */
+.modal-header {
+    background: var(--bg-light);
+    border-bottom: none;
+}
+
+.modal-footer .btn.btn-primary{
+    background-color: #2d3748 !important;
+    border-color: #2d3748 !important;
+}
+
+.message-details {
+    padding: 1rem 0;
+}
+
+.message-box, .reply-box {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    white-space: pre-wrap;
+}
+
+.reply-box {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+/* DataTables Custom Styles */
+.page-item.active .page-link {
+    background-color: #2d3748 !important;
+    border-color: #2d3748 !important;
+}
