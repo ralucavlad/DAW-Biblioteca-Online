@@ -17,17 +17,11 @@ if ($is_logged_in) {
 
 // If user is NOT authenticated, get 3 random books
 $random_books = [];
-$debug_info = [];
 
 if (!$is_logged_in) {
     try {
-        if (!$conn) {
-            $conn = getDatabaseConnection();
-        }
-        if ($conn) {
-            $debug_info[] = "Conexiune cu baza de date reușită";
-            
-            $stmt = $conn->prepare("
+        if ($conn) {            
+            $stmt = $conn->query("
                 SELECT c.carte_id, c.denumire, c.descriere, c.url_coperta, 
                        a.nume as autor_nume
                 FROM carte c
@@ -36,16 +30,10 @@ if (!$is_logged_in) {
                 ORDER BY RAND()
                 LIMIT 3
             ");
-            $stmt->execute();
             $random_books = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            
-            $debug_info[] = "Cărți găsite: " . count($random_books);
-        } else {
-            $debug_info[] = "Conexiunea cu baza de date a esuat";
-        }
+        } 
     } catch (PDOException $e) {
         error_log("Eroare: " . $e->getMessage());
-        $debug_info[] = "Eroare: " . $e->getMessage();
     }
 }
 
@@ -65,7 +53,6 @@ if (!$is_logged_in) {
     
     <?php if (!$is_logged_in): ?>
         <!-- CSS for visitors -->
-        <link rel="stylesheet" href="css/visitor-content.css?v=<?php echo time(); ?>">
         <link rel="stylesheet" href="css/book-cards.css?v=<?php echo time(); ?>">
     <?php else: ?>
         <!-- CSS for authenticated users -->

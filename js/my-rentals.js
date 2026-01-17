@@ -62,7 +62,6 @@ function displayRentals(rentals) {
         if (rental.stare === 'activa') {            
             statusBadge = '<span class="status-badge badge bg-success"><i class="fas fa-book-reader me-1"></i>Activă</span>';            
         } else if (rental.stare === 'returnata') {
-            const dateReturnare = new Date(rental.data_returnare);
             statusBadge = '<span class="status-badge badge bg-secondary"><i class="fas fa-check-circle me-1"></i>Returnată</span>';
         }
 
