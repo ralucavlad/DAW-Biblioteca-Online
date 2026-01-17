@@ -16,8 +16,6 @@ require_once __DIR__ . '/api/common/db.php';
 autoTrackPage();
 
 // Set variables for navbar
-$isLoggedIn = true;
-$userName = $_SESSION['nume'] . ' ' . $_SESSION['prenume'];
 $userRole = $_SESSION['rol'] ?? 'user';
 ?>
 <!DOCTYPE html>

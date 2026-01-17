@@ -54,21 +54,8 @@ try {
     $stmt->execute([$startDate, $endDate, $startDate, $endDate, $startDate, $endDate, $companieId]);
     $employees = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    // Generate report based on type
-    switch ($type) {
-        case 'pdf':
-            generatePDFReport($employees, $companieNume, $startDate, $endDate);
-            break;
-        case 'excel':
-            generateExcelReport($employees, $companieNume, $startDate, $endDate);
-            break;
-        case 'csv':
-            generateCSVReport($employees, $companieNume, $startDate, $endDate);
-            break;
-        default:
-            throw new Exception('Tip raport invalid');
-    }
-    
+    generatePDFReport($employees, $companieNume, $startDate, $endDate);
+               
 } catch (Exception $e) {
     http_response_code(500);
     die('Eroare: ' . $e->getMessage());

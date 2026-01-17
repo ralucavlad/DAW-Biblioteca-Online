@@ -55,8 +55,6 @@ if (empty($token)) {
     }
 }
 
-$isLoggedIn = isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
-$userName = $isLoggedIn ? ($_SESSION['nume'] ?? '') . ' ' . ($_SESSION['prenume'] ?? '') : '';
 ?>
 <!DOCTYPE html>
 <html lang="ro">

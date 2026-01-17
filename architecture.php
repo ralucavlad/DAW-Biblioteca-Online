@@ -223,7 +223,6 @@ autoTrackPage();
                     <div class="list-group-item">Manager selectează interval date</div>
                     <div class="list-group-item">Aplică filtre</div>
                     <div class="list-group-item">Query date activitate angajați</div>
-                    <div class="list-group-item">Generare PDF cu TCPDF</div>
                     <div class="list-group-item">Download raport</div>
                 </div>
             </div>
@@ -325,13 +324,7 @@ autoTrackPage();
                             <i class="fas fa-envelope"></i>
                         </div>
                         <p class="mb-0">PHPMailer</p>
-                    </div>
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="icon-box mx-auto">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <p class="mb-0">TCPDF</p>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>

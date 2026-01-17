@@ -177,10 +177,3 @@ $(document).ready(function() {
     }
     loadCompanies();
 });
-
-// Save widget IDs when reCAPTCHA loads
-window.onRecaptchaLoad = function() {
-    document.querySelectorAll('.g-recaptcha').forEach((container, index) => {
-        container.dataset.widgetId = index;
-    });
-};

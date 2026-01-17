@@ -96,17 +96,10 @@ try {
                 $dataPrimire, 
                 $dataScadenta
             );
-            
-            // Debug: Add email status to response
-            $emailStatus = $result ? 'sent' : 'failed';
-            
-            // Get recipient email for debugging
-            $recipientEmail = $user['email'];
+                        
         } catch (Exception $emailError) {
             // Log error but don't fail the rental
             error_log("Email sending failed for rental $inchiriereId: " . $emailError->getMessage());
-            $emailStatus = 'error: ' . $emailError->getMessage();
-            $recipientEmail = 'unknown';
         }
         
         echo json_encode([

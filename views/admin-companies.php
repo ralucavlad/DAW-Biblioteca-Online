@@ -11,8 +11,6 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
 // Track page visit
 autoTrackPage();
 
-$userName = $_SESSION['nume'] . ' ' . $_SESSION['prenume'];
-$userRole = $_SESSION['rol'];
 ?>
 <!DOCTYPE html>
 <html lang="ro">
